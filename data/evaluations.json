@@ -45,7 +45,7 @@
       "auditTimestamp": "2026-10-23T22:19:53.609Z"
     },
     "doctorReviewed": false,
-    "currentStage": "triage",
+    "currentStage": "discharge",
     "timeline": [
       {
         "id": "evt-1792795625505-1",
@@ -54,8 +54,23 @@
         "actor": "Sistema IA",
         "title": "Ingreso a Triaje Inteligente & Hash Legal",
         "description": "Triaje clasificado como NIVEL 2 - URGENCIA ALTA. Validación anti-fraude y hash SHA-256 generado con Ollama (qwen2.5:3b)."
+      },
+      {
+        "id": "evt-1792796782748",
+        "stage": "discharge",
+        "timestamp": "2026-10-23T23:06:22.748Z",
+        "actor": "Médico Auditor",
+        "title": "Alta Médica & Egreso del Hospital / Consultorio",
+        "description": "Epicrisis emitida: Alta Médica Favorable. Paciente autorizado para egreso seguro."
       }
-    ]
+    ],
+    "dischargeDetails": {
+      "dischargeDate": "2026-10-23T23:06:22.748Z",
+      "dischargeCondition": "Alta Médica Favorable",
+      "epicrisisSummary": "Paciente evaluado y tratado oportunamente. Cede cuadro agudo, evolución clínica favorable sin signos de alarma al egreso.",
+      "followUpInstructions": "Control ambulatorio en 7 días si los síntomas persisten. Cumplir esquema de medicación.",
+      "dischargedBy": "Dr. Alejandro Valdivia M."
+    }
   },
   {
     "id": "MED-2026-0814",
