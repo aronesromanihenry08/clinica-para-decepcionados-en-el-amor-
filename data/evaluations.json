@@ -1,0 +1,266 @@
+[
+  {
+    "id": "MED-2026-1522",
+    "patientName": "JOSE",
+    "patientId": "21312313",
+    "patientAge": 12,
+    "patientGender": "Masculino",
+    "createdAt": "2026-10-23T22:19:45.447Z",
+    "answers": {
+      "pain_scale": 8,
+      "fever_present": "Fiebre leve (37.5°C - 38°C)",
+      "breathing_difficulty": "Leve al hacer esfuerzo",
+      "chest_pain": "Dolor opresivo intenso continuo (ALERTA)",
+      "consciousness_loss": "Mareo o inestabilidad leve",
+      "symptom_duration": "Entre 6 y 24 horas",
+      "patient_gender": "Masculino",
+      "patient_name": "JOSE",
+      "patient_id": "21312313",
+      "patient_age": 12,
+      "main_complaint": "DUELE LA CABEZA",
+      "chronic_diseases": "DIABETES",
+      "current_medications": "NINGUNO",
+      "known_allergies": "A LAS ABEJAS"
+    },
+    "legalConsentAccepted": true,
+    "integrityHash": "e1a2b0f79cb77220a6ff78ffb9d2df8eb19b562b3eeeb8eac88fb483d1baa0bb",
+    "triageLevel": "NIVEL 2 - URGENCIA ALTA",
+    "triageColor": "orange",
+    "aiAudit": {
+      "isConsistent": false,
+      "fraudSuspicion": "ALTA",
+      "coherenceScore": 25,
+      "detectedContradictions": [
+        "Dolor opresivo intenso continuo (ALERTA)",
+        "Mareo o inestabilidad leve"
+      ],
+      "redFlags": [
+        "Dolor opresivo intenso continuo (ALERTA)",
+        "Fiebre leve (37.5°C - 38°C)"
+      ],
+      "presumptiveDiagnosis": "Fiebre de origen desconocido",
+      "clinicalSummary": "El paciente JOSE, un niño de 12 años, presenta dolor opresivo intenso continuo en la cabeza, fiebre leve (37.5°C - 38°C) y mareo leve. El paciente ha estado sintiendo dolor desde hace 6 a 24 horas. El dolor en la cabeza es una alerta clínica importante y debe ser investigado de manera urgente. La fiebre leve puede ser una respuesta normal al dolor o puede indicar una infección subyacente. El paciente no presenta signos de dificultad respiratoria o pérdida de consciencia.",
+      "doctorRecommendations": "Realizar una exploración física detallada, incluyendo la cabeza, y realizar una prueba de sangre para detectar la fiebre. Si el dolor persiste o empeora, se debe considerar una exploración más detallada, como una resonancia magnética cerebral. Si la fiebre persiste, se debe considerar una infección subyacente.",
+      "auditedByModel": "qwen2.5:3b",
+      "auditTimestamp": "2026-10-23T22:19:53.609Z"
+    },
+    "doctorReviewed": false,
+    "currentStage": "triage",
+    "timeline": [
+      {
+        "id": "evt-1792795625505-1",
+        "stage": "triage",
+        "timestamp": "2026-10-23T22:19:45.447Z",
+        "actor": "Sistema IA",
+        "title": "Ingreso a Triaje Inteligente & Hash Legal",
+        "description": "Triaje clasificado como NIVEL 2 - URGENCIA ALTA. Validación anti-fraude y hash SHA-256 generado con Ollama (qwen2.5:3b)."
+      }
+    ]
+  },
+  {
+    "id": "MED-2026-0814",
+    "patientName": "Carlos Mendoza Ramos",
+    "patientId": "47891234",
+    "patientAge": 58,
+    "patientGender": "Masculino",
+    "createdAt": "2026-10-23T21:34:53.656Z",
+    "legalConsentAccepted": true,
+    "answers": {
+      "patient_name": "Carlos Mendoza Ramos",
+      "patient_id": "47891234",
+      "patient_age": 58,
+      "patient_gender": "Masculino",
+      "main_complaint": "Dolor intenso en el centro del pecho que se va hacia el brazo izquierdo",
+      "symptom_duration": "Menos de 6 horas",
+      "pain_scale": 9,
+      "fever_present": "No presenta fiebre",
+      "breathing_difficulty": "Sí, incluso en reposo (ALERTA)",
+      "chest_pain": "Dolor opresivo intenso continuo (ALERTA)",
+      "consciousness_loss": "Mareo o inestabilidad leve",
+      "chronic_diseases": "Hipertensión arterial diagnosticada hace 8 años",
+      "current_medications": "Losartán 50mg diario",
+      "known_allergies": "Ninguna conocida"
+    },
+    "integrityHash": "a7f9c2e401b3d88e6a4b1c9028ef37184291849a9b0c2e3f4a5d6e7f8a9b0c1d",
+    "triageLevel": "NIVEL 1 - EMERGENCIA",
+    "triageColor": "red",
+    "aiAudit": {
+      "isConsistent": true,
+      "fraudSuspicion": "BAJA",
+      "coherenceScore": 98,
+      "detectedContradictions": [],
+      "redFlags": [
+        "Dolor opresivo retroesternal irradiado a extremidad superior",
+        "Disnea de reposo",
+        "Antecedente de hipertensión con dolor EVA 9/10"
+      ],
+      "presumptiveDiagnosis": "Sospecha de Síndrome Coronario Agudo (SCA) / Angina inestable vs IAM",
+      "clinicalSummary": "Varón de 58 años con antecedente de hipertensión arterial. Cuadro de 3 horas de evolución con dolor precordial opresivo irradiado y disnea moderada en reposo. Escala EVA 9/10.",
+      "doctorRecommendations": "Prioridad 1 inmediata. Derivación inmediata a sala de reanimación/shock trauma. Realizar ECG de 12 derivaciones en <10 minutos y perfil de enzimas cardíacas (troponina).",
+      "auditedByModel": "qwen2.5:3b",
+      "auditTimestamp": "2026-10-23T21:36:53.656Z"
+    },
+    "doctorReviewed": false,
+    "currentStage": "triage",
+    "timeline": [
+      {
+        "id": "evt-1792795625505-1",
+        "stage": "triage",
+        "timestamp": "2026-10-23T21:34:53.656Z",
+        "actor": "Sistema IA",
+        "title": "Ingreso a Triaje Inteligente & Hash Legal",
+        "description": "Triaje clasificado como NIVEL 1 - EMERGENCIA. Validación anti-fraude y hash SHA-256 generado con Ollama (qwen2.5:3b)."
+      }
+    ]
+  },
+  {
+    "id": "MED-2026-0815",
+    "patientName": "Lucía Paredes Silva",
+    "patientId": "72654321",
+    "patientAge": 29,
+    "patientGender": "Femenino",
+    "createdAt": "2026-10-23T20:19:53.656Z",
+    "legalConsentAccepted": true,
+    "answers": {
+      "patient_name": "Lucía Paredes Silva",
+      "patient_id": "72654321",
+      "patient_age": 29,
+      "patient_gender": "Femenino",
+      "main_complaint": "Dolor punzante de garganta y malestar general",
+      "symptom_duration": "Entre 1 y 3 días",
+      "pain_scale": 4,
+      "fever_present": "Fiebre leve (37.5°C - 38°C)",
+      "breathing_difficulty": "No, respiración normal",
+      "chest_pain": "No",
+      "consciousness_loss": "No",
+      "chronic_diseases": "Ninguna",
+      "current_medications": "Paracetamol 500mg cada 8 horas",
+      "known_allergies": "Alergia a la penicilina (produce urticaria)"
+    },
+    "integrityHash": "c4b182ef38910a74d9e201b48f91048291a7c3b29401e8471b0294e7201b948a",
+    "triageLevel": "NIVEL 4 - ATENCIÓN GENERAL",
+    "triageColor": "green",
+    "aiAudit": {
+      "isConsistent": true,
+      "fraudSuspicion": "BAJA",
+      "coherenceScore": 95,
+      "detectedContradictions": [],
+      "redFlags": [],
+      "presumptiveDiagnosis": "Faringoamigdalitis aguda no complicada / Infección de vías respiratorias superiores",
+      "clinicalSummary": "Paciente femenina de 29 años con odinofagia de 48 horas de evolución, febrícula y dolor moderado EVA 4/10. Sin signos de compromiso respiratorio ni banderas rojas.",
+      "doctorRecommendations": "Atención ambulatoria estándar. Inspección orofaríngea. Recordar contraindicación estricta de betalactámicos por alergia confirmada a penicilina.",
+      "auditedByModel": "qwen2.5:3b",
+      "auditTimestamp": "2026-10-23T20:21:53.656Z"
+    },
+    "doctorReviewed": true,
+    "doctorNotes": "Evaluada por Dr. Valdivia. Faringitis viral. Se prescribió hidratación y analgésico no betalactámico.",
+    "currentStage": "discharge",
+    "timeline": [
+      {
+        "id": "evt-1792795625505-1",
+        "stage": "triage",
+        "timestamp": "2026-10-23T20:19:53.656Z",
+        "actor": "Sistema IA",
+        "title": "Ingreso a Triaje Inteligente & Hash Legal",
+        "description": "Triaje clasificado como NIVEL 4 - ATENCIÓN GENERAL. Validación anti-fraude y hash SHA-256 generado con Ollama (qwen2.5:3b)."
+      },
+      {
+        "id": "evt-1792795625505-2",
+        "stage": "consultation",
+        "timestamp": "2026-10-23T22:47:05.505Z",
+        "actor": "Médico Auditor",
+        "title": "Atención y Revisión Médica",
+        "description": "Evaluada por Dr. Valdivia. Faringitis viral. Se prescribió hidratación y analgésico no betalactámico."
+      },
+      {
+        "id": "evt-1792795625505",
+        "stage": "discharge",
+        "timestamp": "2026-10-23T22:47:05.505Z",
+        "actor": "Médico Auditor",
+        "title": "Alta Médica & Egreso del Hospital / Consultorio",
+        "description": "Epicrisis emitida: Alta M�dica Favorable. Paciente autorizado para egreso seguro."
+      },
+      {
+        "id": "evt-1792795633606",
+        "stage": "discharge",
+        "timestamp": "2026-10-23T22:47:13.606Z",
+        "actor": "Paciente",
+        "title": "Encuesta de Satisfacción y Feedback Registrada",
+        "description": "Calificación: 5/5 estrellas. Comentario: \"Excelente atenci�n m�dica. La Dra. Sof�a y el Dr. Valdivia me atendieron con mucha rapidez y me orientaron muy bien.\". Recomienda: SI."
+      }
+    ],
+    "dischargeDetails": {
+      "dischargeDate": "2026-10-23T22:47:05.505Z",
+      "dischargeCondition": "Alta M�dica Favorable",
+      "epicrisisSummary": "Paciente egresa con resoluci�n favorable y control del dolor.",
+      "followUpInstructions": "Reposo de 48 horas e hidrataci�n.",
+      "dischargedBy": "Dr. Alejandro Valdivia"
+    },
+    "satisfaction": {
+      "overallRating": 5,
+      "wouldRecommend": "SI",
+      "medicalCareRating": 5,
+      "waitingTimeRating": 5,
+      "clarityRating": 5,
+      "comment": "Excelente atenci�n m�dica. La Dra. Sof�a y el Dr. Valdivia me atendieron con mucha rapidez y me orientaron muy bien.",
+      "submittedAt": "2026-10-23T22:47:13.606Z"
+    }
+  },
+  {
+    "id": "MED-2026-0816",
+    "patientName": "Manuel Quispe Huamán",
+    "patientId": "10839201",
+    "patientAge": 44,
+    "patientGender": "Masculino",
+    "createdAt": "2026-10-23T19:19:53.656Z",
+    "legalConsentAccepted": true,
+    "answers": {
+      "patient_name": "Manuel Quispe Huamán",
+      "patient_id": "10839201",
+      "patient_age": 44,
+      "patient_gender": "Masculino",
+      "main_complaint": "Dice no tener ningún dolor pero afirma que necesita descanso médico urgente por dolor insoportable",
+      "symptom_duration": "Menos de 6 horas",
+      "pain_scale": 10,
+      "fever_present": "No presenta fiebre",
+      "breathing_difficulty": "No, respiración normal",
+      "chest_pain": "No",
+      "consciousness_loss": "No",
+      "chronic_diseases": "Ninguna",
+      "current_medications": "Ninguno",
+      "known_allergies": "Ninguna"
+    },
+    "integrityHash": "f1a8c9038b472e01a9471b29481029e8471b0928374019283740192837401928",
+    "triageLevel": "NIVEL 3 - URGENCIA MEDIA",
+    "triageColor": "yellow",
+    "aiAudit": {
+      "isConsistent": false,
+      "fraudSuspicion": "ALTA",
+      "coherenceScore": 42,
+      "detectedContradictions": [
+        "Inconsistencia narrativa: Describe no sentir malestar pero marca escala máxima EVA 10/10.",
+        "Solicitud explícita de descanso médico desproporcionada con la ausencia de signos objetivos reportados."
+      ],
+      "redFlags": [
+        "Posible simulación o inconsistencia en la anamnesis para obtención de licencia"
+      ],
+      "presumptiveDiagnosis": "Cuadro clínico indeterminado / Sospecha de inconsistencia o simulación de síntomas",
+      "clinicalSummary": "Paciente refiere requerimiento de justificación laboral. Discordancia severa entre motivo de consulta y escala de dolor declarada sin hallazgos objetivos.",
+      "doctorRecommendations": "Auditoría médica requerida. Examen físico presencial minucioso antes de emitir cualquier certificación legal o médica.",
+      "auditedByModel": "qwen2.5:3b",
+      "auditTimestamp": "2026-10-23T19:20:53.656Z"
+    },
+    "doctorReviewed": false,
+    "currentStage": "triage",
+    "timeline": [
+      {
+        "id": "evt-1792795625505-1",
+        "stage": "triage",
+        "timestamp": "2026-10-23T19:19:53.656Z",
+        "actor": "Sistema IA",
+        "title": "Ingreso a Triaje Inteligente & Hash Legal",
+        "description": "Triaje clasificado como NIVEL 3 - URGENCIA MEDIA. Validación anti-fraude y hash SHA-256 generado con Ollama (qwen2.5:3b)."
+      }
+    ]
+  }
+]
